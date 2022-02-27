@@ -6,19 +6,16 @@ public class SquatMaxCalculator {
 		
 		System.out.println("Welcome to the Squat Max Calculator");
 		
-		Scanner scan= new Scanner(System.in); 
-		String gender;
-		String age;
-		String Max;
+		Scanner scan= new Scanner(System.in); 	
 		
 		System.out.println("Enter gender: ");	
-		 gender = scan.nextLine();
+		 String gender = scan.nextLine();
 		
 		System.out.println("Enter Age: ");	
-	    age = scan.nextLine();
+	    String age = scan.nextLine();
 		
-		System.out.println("Enter 8 Rep Max: ");	
-		 Max = scan.nextLine();
+		System.out.println("Enter 8 rep max: ");	
+		 String max = scan.nextLine();
 		
 
 

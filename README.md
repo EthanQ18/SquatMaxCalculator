@@ -15,10 +15,10 @@ public class SquatMaxCalculator {
 	    String age = scan.nextLine();
 		
 		System.out.println("Enter 8 rep max: ");	
-		 String max = scan.nextLine();
+		 int y = scan.nextInt();
+		double X = 1.264;
+		scan.close();
+		double maxsquat = y * X;
+		System.out.println(maxsquat);
 		
-
-
-			
-	}
-}
+}}

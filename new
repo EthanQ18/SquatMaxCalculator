@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class SquatMaxCalculator { public static void main(String[] args) {
+
+	System.out.println("Welcome to the Squat Max Calculator");
+	
+	// Constants
+	String gender; // the user's gender
+	String age; // the user's age
+	//Variables
+	int y;// the user's input on reps
+	int w;// the users's input on weight
+	double maxsquat; // formula calculates the maxsquat after the user's input
+	double x;// formula
+	
+	
+	
+	Scanner scan= new Scanner(System.in); 
+
+	System.out.println("Enter gender (M,F): ");	
+    gender = scan.nextLine();
+	
+	System.out.println("Enter Age: ");	
+    age = scan.nextLine();
+	
+    System.out.println("Enter Weight: ");	
+    w = scan.nextInt();
+    
+	System.out.println("Enter number of reps: ");	
+	 y = scan.nextInt();
+     x =   w * (1 + 0.0333 * y);
+	scan.close();
+    maxsquat = x;
+    
+    System.out.println(maxsquat + " lbs");
+   
+    if (maxsquat >300)
+    {
+    	System.out.println("You are above the average weight");
+    }
+    else 
+    {
+    	System.out.println("keep working.");
+    }
+    
+}
+}

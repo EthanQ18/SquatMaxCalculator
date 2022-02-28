@@ -35,7 +35,7 @@ public class SquatMaxCalculator { public static void main(String[] args) {
 		x =   w * (1 + 0.0333 * y);
 		maxsquat = x;
 
-		System.out.println(maxsquat + " lbs");
+		System.out.printf(maxsquat + " lbs");
 
 
 

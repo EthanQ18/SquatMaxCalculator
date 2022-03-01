@@ -3,45 +3,53 @@ import java.util.Scanner;
 public class SquatMaxCalculator { public static void main(String[] args) {
 
 	System.out.println("Welcome to the Squat Max Calculator");
-	
-	// Constants
-	String gender; // the user's gender
-	String age; // the user's age
+
 	//Variables
 	int y;// the user's input on reps
 	int w;// the users's input on weight
+	int r;// repeat calculator
 	double maxsquat; // formula calculates the maxsquat after the user's input
 	double x;// formula
-	
-	
-	
-	Scanner scan= new Scanner(System.in); 
 
-	System.out.println("Enter gender (M,F): ");	
-    gender = scan.nextLine();
+	Scanner scan= new Scanner(System.in); // Computer Scans user input
+	r = 1;
 	
-	System.out.println("Enter Age: ");	
-    age = scan.nextLine();
-	
-    System.out.println("Enter Weight: ");	
-    w = scan.nextInt();
-    
-	System.out.println("Enter number of reps: ");	
-	 y = scan.nextInt();
-     x =   w * (1 + 0.0333 * y);
+		System.out.println("Enter gender (M,F): ");	
+	    final String gender = scan.nextLine(); // Constant
+
+		System.out.println("Enter age: ");	
+		final String age = scan.nextLine(); //Constant
+		
+		do { // Beginning of dowhile loop
+		System.out.println("Enter the weight that you did in lbs: ");	
+		w = scan.nextInt();
+
+		System.out.println("Enter number of reps: ");	
+		y = scan.nextInt();
+		x =   w * (1 + 0.0333 * y);//formula
+		maxsquat = x;
+
+		System.out.println("Your maxsquat is: " + maxsquat + " lbs");
+
+		if (maxsquat > 185)//Conditional Statement. 185 is our estimated average 1RM
+		{
+			System.out.println(" Great Job!You are above the average weight!");
+		}
+		else 
+		{
+			System.out.println(" You're almost there! You're below the average weight.");
+		}
+		
+		System.out.println("Do you want to calculate a new max?  Enter '1' for Yes, '2' for No");
+		r = scan.nextInt();
+		}
+	while (r == 1 ); // end of dowhile loop
+	if (r != 1)// if statement
+	{ 
+		System.out.println("Thank you! Have a Great Day!");
+	}
 	scan.close();
-    maxsquat = x;
-    
-    System.out.println(maxsquat + " lbs");
-   
-    if (maxsquat >300)
-    {
-    	System.out.println("You are above the average weight");
-    }
-    else 
-    {
-    	System.out.println("keep working.");
-    }
-    
+	
 }
 }
+

@@ -51,9 +51,11 @@ public class SquatMaxCalculator { public static void main(String[] args) {
 		r = scan.nextInt();
 		}
 	while (r == 1 );
+	if (r != 1)
+	{ 
+		System.out.println("Thank you! Have a Great Day!");
+	}
 	scan.close();
 	
 }
 }
-
-

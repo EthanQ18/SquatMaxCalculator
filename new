@@ -12,6 +12,7 @@ public class SquatMaxCalculator { public static void main(String[] args) {
 	int r;// repeat calculator
 	double maxsquat; // formula calculates the maxsquat after the user's input
 	double x;// Constant
+	
 
 	Scanner scan= new Scanner(System.in); // Computer Scans user input
 	r = 1;
@@ -31,7 +32,8 @@ public class SquatMaxCalculator { public static void main(String[] args) {
 		x =   w * (1 + 0.0333 * y);//formula for 1RM
 		maxsquat = x;
 
-		System.out.println("Your maxsquat is: " + maxsquat + " lbs");
+		double rounded= Math.round(maxsquat);// round method from youtube
+		System.out.print( " Your maxsquat is: " + rounded + " lbs");
 
 		if (maxsquat > 185)//Conditional Statement. 185 is our estimated average 1RM
 		{

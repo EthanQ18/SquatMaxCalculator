@@ -1,1 +1,57 @@
+import java.util.Scanner;
 
+public class SquatMaxCalculator { public static void main(String[] args) {
+
+	System.out.println("Welcome to the Squat Max Calculator");
+
+	//Variables
+	int y;// the user's input on reps
+	int age;
+	int gender;
+	int w;// the users's input on weight
+	int r;// repeat calculator
+	double maxsquat; // formula calculates the maxsquat after the user's input
+	double x;// Constant
+	
+
+	Scanner scan= new Scanner(System.in); // Computer Scans user input
+	r = 1;
+	
+	System.out.println("Enter age");
+	 age = scan.nextInt();
+	
+	System.out.println("Enter sex: M/F");
+	 gender = scan.next().charAt(0);
+	
+	do { // Beginning of dowhile loop
+		System.out.println("Enter the squat weight that you did in lbs: ");	
+		w = scan.nextInt();
+
+		System.out.println("Enter number of reps: ");	
+		y = scan.nextInt();
+		x =   w * (1 + 0.0333 * y);//formula for 1RM
+		maxsquat = x;
+
+		double rounded= Math.round(maxsquat);// round method from youtube
+		System.out.print( " Your maxsquat is: " + rounded + " lbs");
+
+		if ((gender =='M') && (age <20))
+		{
+			System.out.println(" The average weight for you age range is a");
+		}
+		else   (age >=40) 
+		{
+			System.out.println(" the average weight k");
+		}
+		
+		System.out.println("Do you want to calculate a new max?  Enter '1' for Yes, '2' for No");
+		r = scan.nextInt();
+		}
+	while (r == 1 ); // end of dowhile loop
+	if (r != 1)// if statement
+	{ 
+		System.out.println("Thank you! Have a Great Day!");
+	}
+	scan.close();
+	
+}

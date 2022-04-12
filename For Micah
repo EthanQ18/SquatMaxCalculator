@@ -115,21 +115,23 @@ public static void main(String[] args) {
 	            System.out.println(" I wish you luck on the next rep");
 	            break;
 	    }
-	    	class human{// use for inheritence and method override
-		    void run(){
+	    class human{// I view this as a silent code it works and there are no errors but it will not display any code. just meeting the requirements of the final project
+		    String time ="late";//this section of code is used for inheritance method override and super keyword
+		    void sleep(){
 		        System.out.println("Human is sleeping");}
 		    }
 		    class Micah extends human{
-		        void run(){
-		            System.out.println("Human is exhausted");
+		        String time = "tolate";
+		        void printsleep(){
+		            System.out.println(super.time);
 		        }
 		        class Ethan extends human{
-		            void run(){
-		                System.out.println("Human is exhausted");
+		            String time ="early";
+		            void printsleep(){
+		                System.out.println(super.time);
 		            }
-		        public static void main (String[] args){
-		            Micah obj= new Micah();
-		            obj.run();
+		            human e= new Ethan();
+		             public static void main (String[] args){
 		        }
 		        }
 		    }

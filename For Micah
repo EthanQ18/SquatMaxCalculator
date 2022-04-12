@@ -38,7 +38,7 @@ public class SquatMaxCalculator { public static void main(String[] args) {
 		
 		
 		
-		if( gender == 'M' && gender == 'm')
+		if( gender == 'M' && gender == 'm')//turn into a switch statement it would compress and allow more statements and a easier transition
 		{
 			if (age >=15 && age <=20) 
 			System.out.println(" The average weight for your age is 242 lbs");

@@ -11,6 +11,7 @@ public class SquatMaxCalculator {
 public static void main(String[] args) {
 
 	System.out.println("Welcome to the Squat Max Calculator");
+	int [] whattimeIwenttosleepthisweek = {5,6,3,2,2,2,1};//simple array for me to keep tract of how much sleep Ive lost
 
 	//Variables
 	int y;// the user's input on reps

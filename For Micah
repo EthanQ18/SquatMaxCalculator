@@ -115,6 +115,25 @@ public static void main(String[] args) {
 	            System.out.println(" I wish you luck on the next rep");
 	            break;
 	    }
+	    	class human{// use for inheritence and method override
+		    void run(){
+		        System.out.println("Human is sleeping");}
+		    }
+		    class Micah extends human{
+		        void run(){
+		            System.out.println("Human is exhausted");
+		        }
+		        class Ethan extends human{
+		            void run(){
+		                System.out.println("Human is exhausted");
+		            }
+		        public static void main (String[] args){
+		            Micah obj= new Micah();
+		            obj.run();
+		        }
+		        }
+		    }
+		
 		
 		System.out.println("Do you want to calculate a new max?  Enter '1' for Yes, '2' for No");
 		r = scan.nextInt();

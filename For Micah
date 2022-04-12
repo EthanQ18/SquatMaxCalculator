@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
-public class SquatMaxCalculator { public static void main(String[] args) {
+public class SquatMaxCalculator { 
+  public abstract class Coders{//wanting to create a code that will have our nammes in the program but not display them
+        private String name;//used to create a new string unknown to the user
+    public Coders(String name){
+        this.name= name;
+   
+    }
+    }
+public static void main(String[] args) {
 
 	System.out.println("Welcome to the Squat Max Calculator");
 
@@ -82,8 +90,31 @@ public class SquatMaxCalculator { public static void main(String[] args) {
 			System.out.println(" The average weight for your age is 161 lbs");
 		}
 		
-		
-		
+		 int problems = 99;//just wanted to make 99 problems 
+	    switch (problems)//Takes the number defined ie 99 and runs throught the cases untill it matches case (99)
+	    {
+	        case (91):
+	            System.out.println("There are 91 problems remaining");
+	            break;
+	        case (92):
+	            System.out.println("There are 92 problems remaining");
+	            break;
+	       case (93):
+	            System.out.println("There are 93 problems remaining");
+	            break;
+	       case (94):
+	            System.out.println("There are 94 problems remaining");
+	            break;
+	       case (95):
+	            System.out.println("There are 95 problems remaining");
+	            break;
+	       case (96):
+	            System.out.println("There are 96 problems remaining");
+	            break;
+	       case (99):
+	            System.out.println(" I wish you luck on the next rep");
+	            break;
+	    }
 		
 		System.out.println("Do you want to calculate a new max?  Enter '1' for Yes, '2' for No");
 		r = scan.nextInt();

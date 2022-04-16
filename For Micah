@@ -91,7 +91,7 @@ public static void main(String[] args) {
 			System.out.println(" The average weight for your age is 161 lbs");
 		}
 		
-		 int problems = 99;//just wanted to make 99 problems 
+		 int problems = 99;
 	    switch (problems)//Takes the number defined ie 99 and runs throught the cases untill it matches case (99)
 	    {
 	        case (91):
@@ -116,7 +116,7 @@ public static void main(String[] args) {
 	            System.out.println(" I wish you luck on the next rep");
 	            break;
 	    }
-	    class human{// I view this as a silent code it works and there are no errors but it will not display any code. just meeting the requirements of the final project
+	    class human{
 		    String time ="late";//this section of code is used for inheritance method override and super keyword
 		    void sleep(){
 		        System.out.println("Human is sleeping");}

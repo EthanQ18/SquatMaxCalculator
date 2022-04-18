@@ -117,7 +117,7 @@ public static void main(String[] args) {
 	            break;
 	    }
 	    class human{
-		    String time ="late";//this section of code is used for inheritance method override and super keyword
+		    String time ="late";//this section of code is used for inheritance method override
 		    void sleep(){
 		        System.out.println("Human is sleeping");}
 		    }

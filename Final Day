@@ -1,17 +1,23 @@
 package SquatMaxCalculator;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.Scanner;//JAVA LIBRARY
 
-public class SquatMaxCalculator
-{ public static void main(String[] args) {
+public class SquatMaxCalculator implements Interface { 
+	String TitleofSupplement;
+	int proteindosage;
+	
+	public SquatMaxCalculator(int proteindosage, String TitleofSupplement){
+		this.TitleofSupplement= TitleofSupplement;//THIS KEYWORD
+		this.proteindosage=proteindosage;
+	}
+
+ public static void main(String[] args)//STATIC VARIABLE
+	{
 
 
+	System.out.println("Welcome to the Squat Max Calculator");//PRINT LN METHOD
 
-
-	System.out.println("Welcome to the Squat Max Calculator");
-
-	//Variables
+	//VARIABLES
 	int y;// the user's input on reps
 	int age;
 	int gender;
@@ -29,75 +35,78 @@ public class SquatMaxCalculator
 	
 	System.out.println("Enter sex: M/F");
 	 gender = scan.next().charAt(0);
-	
+	 
+	//ENCAPSULATION
 	do { // Beginning of dowhile loop
 		System.out.println("Enter the squat weight that you did in lbs: ");	
 		w = scan.nextInt();
 
+		//CONSTANTS
 		System.out.println("Enter number of reps: ");	
 		y = scan.nextInt();
 		x =   w * (1 + 0.0333 * y);//formula for 1RM
 		maxsquat = x;
 
-		double rounded= Math.round(maxsquat);// round method from java library
+		double rounded= Math.round(maxsquat);// JAVA LIBRARY
 		System.out.print( " Your maxsquat is: " + rounded + " lbs");
 
 		
 		
-		
-		if( gender == 'M' && gender == 'm')
+	
+		if( gender == 'M' && gender =='m')
 		{
-			if (age >=15 && age <=20) 
-			System.out.println(" The average weight for your age is 242 lbs");
+			if (age >=15 && age <=20) //CONDITIONAL OPERATOR
+			System.out.println(" The average male weight for your age is 242 lbs");
 		}
 		else if (age >=21 && age <=25)
 		{
-			System.out.println(" The average weight for your age is 277 lbs");
+			System.out.println(" The average male weight for your age is 277 lbs");
 		}
 		else if (age >=26 && age <=30)
 		{
-			System.out.println(" The average weight for your age is 284  lbs");
+			System.out.println(" The average male weight for your age is 284  lbs");
 		}
 		else if (age >=31 && age <=35)
 		{
-			System.out.println(" The average weight for your age is 284 lbs");
+			System.out.println(" The average male weight for your age is 284 lbs");
 		}
-		else if (age >=36 && age <=40)
+		else if (age > 36)
 		{
-			System.out.println(" The average weight for your age is 284 lbs");
+			System.out.println(" The average male weight for your age is 284 lbs");
 		}
 		
-		if( gender == 'F' && gender == 'f')
+		if( gender == 'F' && gender =='f')
 		{
 			if (age >=15 && age <=20) 
-			System.out.println(" The average weight for your age is 137 lbs");
+			System.out.println(" The average female weight for your age is 137 lbs");
 		}
 		else if (age >=21 && age <=25)
 		{
-			System.out.println(" The average weight for your age is 157 lbs");
+			System.out.println(" The average female weight for your age is 157 lbs");
 		}
 		else if (age >=26 && age <=30)
 		{
-			System.out.println(" The average weight for your age is 161  lbs");
+			System.out.println(" The average female weight for your age is 161  lbs");
 		}
 		else if (age >=31 && age <=35)
 		{
-			System.out.println(" The average weight for your age is 161 lbs");
+			System.out.println(" The average female weight for your age is 161 lbs");
 		}
-		else if (age >=36 && age <=40)
+		else if (age >36 )
 		{
-			System.out.println(" The average weight for your age is 161 lbs");
+			System.out.println(" The average female  weight for your age is 161 lbs");
 		}
 		
 		
 		
 		
-		System.out.println("Do you want to calculate a new max?  Enter '1' for Yes, '2' for No, and '3' for some Motivation");
+		System.out.println("Do you want to calculate a new max?  Enter '1' for Yes, '2' for No, or '3' for some Motivation");
 		r = scan.nextInt();
 		}
 	while (r == 1 ); // end of dowhile loop
 
 
+	//SWITCH STATEMENT
 	switch (r) {
 	case 2:
 		System.out.println("Have a great day!");
@@ -117,35 +126,4 @@ for (String str : quotes)// for element to print array after user selects "3"
 System.out.println(str);
 break;
 
-}
-
-	
-		
-		THIS WAS GOING TO BE CONSTRUCTOR //DIDNT FINISH THO
-			
-	//	}
-	//	System.out.println("If you want recommended maximum protein intake select '3;");
-	//	if (r==3)
-	//	{
-//			System.out.println("Protein doesing displayed below ");// declaring super keyword and constructor 
-		
-	//		public class Supplements {
-			
-		//		String type;
-		//		int dose;
-				
-			//	public  Supplements(String type, int dose) 	{
-			//		this.type = type;
-			//		this.dose = dose;
-		//			}
-			
-	//		}
-	
-
-		   
-
-	
-}
-
-}
-
+}}}
